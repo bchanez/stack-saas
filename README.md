@@ -1,5 +1,7 @@
 # With Docker Compose
 
+Based on https://github.com/ixartz/Next-js-Boilerplate
+
 ## Prerequisites using Docker and Makefile
 
 Install [Docker Desktop](https://docs.docker.com/get-docker) for Mac, Windows, or Linux. Docker Desktop includes Docker Compose as part of the installation.
