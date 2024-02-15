@@ -8,9 +8,12 @@
     "@types/node": "^18.11.9",
     "@types/react": "^18.0.25",
     "@types/react-dom": "^18.0.9",
+    "autoprefixer": "^10.4.17",
     "eslint": "^7.24.0",
     "eslint-config-next": "latest",
+    "postcss": "^8.4.35",
     "prettier": "3.2.5",
+    "tailwindcss": "^3.4.1",
     "typescript": "^4.9.3"
   },
   "private": true,
@@ -21,5 +24,6 @@
     "prettier-check": "npx prettier . --check",
     "start": "next start",
     "type-check": "tsc"
-  }
+  },
+  "name": "stack-saas"
 }
