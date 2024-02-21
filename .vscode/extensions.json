@@ -1,14 +1,31 @@
 {
   "recommendations": [
+    // Linting / Formatting
     "dbaeumer.vscode-eslint",
-    "mikestead.dotenv",
+    "esbenp.prettier-vscode",
+    "usernamehw.errorlens",
+    "yoavbls.pretty-ts-errors",
+    // Testing
+    "Orta.vscode-jest",
+    "ms-playwright.playwright",
+    // PR management / Reviewing
+    "github.vscode-pull-request-github",
+    // Showing todo comments
+    "gruntfuggly.todo-tree",
+    // Collaborating
+    "ms-vsliveshare.vsliveshare",
+    // Debugging
+    "ms-vscode.vscode-js-profile-flame",
+    // Language Support
     "csstools.postcss",
     "bradlc.vscode-tailwindcss",
-    "Orta.vscode-jest",
+    "mikestead.dotenv",
+    "unifiedjs.vscode-mdx",
+    // send HTTP request
     "humao.rest-client",
-    "yoavbls.pretty-ts-errors",
-    "ms-playwright.playwright",
-    "github.vscode-github-actions",
-    "lokalise.i18n-ally"
+    // Translation
+    "lokalise.i18n-ally",
+    // Github Actions
+    "github.vscode-github-actions"
   ]
 }
