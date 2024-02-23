@@ -1,3 +1,4 @@
+# see https://github.com/vercel/next.js/blob/canary/examples/with-docker-compose/next-app/dev.Dockerfile
 FROM node:18-alpine
 
 WORKDIR /app
@@ -14,8 +15,8 @@ RUN \
 
 COPY src ./src
 COPY public ./public
-COPY next.config.js .
-COPY tsconfig.json .
+COPY next.config.js tsconfig.json ./
+COPY tailwind.config.ts postcss.config.js ./
 
 # Next.js collects completely anonymous telemetry data about general usage. Learn more here: https://nextjs.org/telemetry
 # Uncomment the following line to disable telemetry at run time

@@ -1,3 +1,4 @@
+# see https://github.com/vercel/next.js/blob/canary/examples/with-docker-compose/next-app/prod.Dockerfile
 FROM node:18-alpine AS base
 
 # Step 1. Rebuild the source code only when needed
@@ -18,8 +19,8 @@ RUN \
 
 COPY src ./src
 COPY public ./public
-COPY next.config.js .
-COPY tsconfig.json .
+COPY next.config.js tsconfig.json ./
+COPY tailwind.config.ts postcss.config.js ./
 
 # Environment variables must be present at build time
 # https://github.com/vercel/next.js/discussions/14030

@@ -1,3 +1,4 @@
+# see https://github.com/vercel/next.js/blob/canary/examples/with-docker-compose/docker-compose.prod.yml
 version: "3"
 
 services:
