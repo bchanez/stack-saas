@@ -1,29 +1,17 @@
-.PHONY: build-development
-build-development: ## Build the development docker image.
-	docker network rm my_network -f
-	docker network create my_network
-	docker compose -f docker/development/docker-compose.yml build
+.PHONY: up-development
+up-development: ## Start the development docker container.
+	docker compose -f docker/development/docker-compose.yml up --build
 
-.PHONY: start-development
-start-development: ## Start the development docker container.
-	docker compose -f docker/development/docker-compose.yml up
-
-.PHONY: stop-development
-stop-development: ## Stop the development docker container.
+.PHONY: down-development
+down-development: ## Stop the development docker container.
 	docker compose -f docker/development/docker-compose.yml down
 
-.PHONY: build-production
-build-production: ## Build the production docker image.
-	docker network rm my_network -f
-	docker network create my_network
-	docker compose -f docker/production/docker-compose.yml build
+.PHONY: up-production
+up-production: ## Start the production docker container.
+	docker compose -f docker/production/docker-compose.yml up -d --build
 
-.PHONY: start-production
-start-production: ## Start the production docker container.
-	docker compose -f docker/production/docker-compose.yml up -d
-
-.PHONY: stop-production
-stop-production: ## Stop the production docker container.
+.PHONY: down-production
+down-production: ## Stop the production docker container.
 	docker compose -f docker/production/docker-compose.yml down
 
 .PHONY: free-space
