@@ -3,16 +3,16 @@ import Link from 'next/link';
 
 import NavItem from './NavItem';
 
-const NAV_LINKS = [{ href: '/', key: 'home', label: 'Home' }];
+const NAV_LINKS = [{ href: '/', key: 'dashboard', label: 'Dashboard' }];
 
-const Navbar = () => {
+export default function Navbar() {
   return (
-    <nav>
+    <nav className='flex w-full items-center justify-between bg-blue-600 px-6 py-3 text-white'>
       <Link href='/'>
         <Image src='/vercel.svg' alt='logo' width={74} height={29} />
       </Link>
 
-      <ul>
+      <ul className='flex gap-1 font-bold'>
         {NAV_LINKS.map((link) => (
           <NavItem href={link.href} key={link.key}>
             {link.label}
@@ -21,6 +21,4 @@ const Navbar = () => {
       </ul>
     </nav>
   );
-};
-
-export default Navbar;
+}
