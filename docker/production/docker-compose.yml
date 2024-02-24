@@ -22,4 +22,4 @@ services:
 # with each other, by using their container name as a hostname
 networks:
   my_network:
-    external: true
+    name: my_network
